@@ -2,16 +2,12 @@
 
 A terminal-based chat application built using socket programming in C++, enabling real-time client-server communication over TCP/IP networks. This project demonstrates low-level networking concepts such as socket creation, connection handling, and real-time data transmission.
 
----
-
 ## FEATURES
 - Real-time messaging using TCP/IP sockets  
 - Client-server architecture  
 - Bidirectional communication  
 - Lightweight terminal-based interface  
 - Low-latency communication  
-
----
 
 ## ARCHITECTURE
 Client ↔ Server ↔ Client  
@@ -20,14 +16,10 @@ Client ↔ Server ↔ Client
 - Clients connect using IP and port  
 - Messages are exchanged using TCP protocol  
 
----
-
 ## TECH STACK
 - C++  
 - TCP/IP Socket Programming  
 - Linux / Unix Environment  
-
----
 
 ## PROJECT STRUCTURE
 
@@ -36,8 +28,6 @@ CLIENT/
 
 SERVER/
 ├── server.cpp
-
----
 
 ## ⚙️ COMPILE & RUN
 
@@ -50,7 +40,7 @@ Run
 ./SERVER/server
 ./CLIENT/client
 
-## 💻 CORE CODE
+##CORE CODE
 Server Setup
 ```bash
 int server_fd = socket(AF_INET, SOCK_STREAM, 0);
@@ -79,13 +69,13 @@ Send & Receive
 send(sock, message, strlen(message), 0);
 read(sock, buffer, 1024);
 ```
-##📡 WORKFLOW
+##WORKFLOW
 - Server starts and listens on a port
 - Client connects using IP and port
 - Messages are exchanged via TCP sockets
 - Real-time communication continues
 
-##🔮 FUTURE IMPROVEMENTS
+##FUTURE IMPROVEMENTS
 - Multi-client support using threading
 - Secure communication (encryption)
 - GUI-based chat interface
