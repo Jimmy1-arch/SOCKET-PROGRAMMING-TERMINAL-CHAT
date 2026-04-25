@@ -29,7 +29,7 @@ CLIENT/
 SERVER/
 ├── server.cpp
 
-## ⚙️ COMPILE & RUN
+##COMPILE & RUN
 
 ### Compile
 ```bash
