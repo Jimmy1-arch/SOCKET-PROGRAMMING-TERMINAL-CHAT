@@ -23,11 +23,9 @@ Client ↔ Server ↔ Client
 
 ## PROJECT STRUCTURE
 
-CLIENT/
-├── client.cpp
+CLIENT/ client.cpp
 
-SERVER/
-├── server.cpp
+SERVER/ server.cpp
 
 ##COMPILE & RUN
 
@@ -69,13 +67,13 @@ Send & Receive
 send(sock, message, strlen(message), 0);
 read(sock, buffer, 1024);
 ```
-##WORKFLOW
+## WORKFLOW
 - Server starts and listens on a port
 - Client connects using IP and port
 - Messages are exchanged via TCP sockets
 - Real-time communication continues
 
-##FUTURE IMPROVEMENTS
+## FUTURE IMPROVEMENTS
 - Multi-client support using threading
 - Secure communication (encryption)
 - GUI-based chat interface
